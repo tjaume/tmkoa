@@ -16,9 +16,9 @@ export default class Toa extends Koa {
     constructor() {
         super();
         this.CONFIG = {
-            port: 8080,
+            port: 3000,
             env: process.env.NODE_ENV || 'development',
-            name: 'toa-server',
+            name: 'tmkoa-server',
             notListen: false,
         };
     }

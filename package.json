@@ -1,11 +1,11 @@
 {
-    "name": "@jmy/toa",
-    "version": "1.0.0",
+    "name": "tmkoa",
+    "version": "1.0.1",
     "description": "server framework",
     "main": "./lib/index.js",
     "types": "./lib/types/index.d.ts",
     "typings": "./lib/types/index.d.ts",
-    "repository": "git@github.com:tjaume/toa.git",
+    "repository": "git@github.com:tjaume/tmkoa.git",
     "license": "MIT",
     "scripts": {
         "dev": "ts-node ./test/index.ts",
