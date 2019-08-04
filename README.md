@@ -23,6 +23,8 @@ yarn add tmkoa
 npm install tmkoa
 ```
 
+> 确保机器上的 node 版本 >=8.9.0
+
 ## 快速开始
 
 项目结构如下：
@@ -484,3 +486,7 @@ before begin...
   <-- GET /hello/default
 after end...
 ```
+
+## 结语
+
+非常感谢 koa、nestjs、typeorm 等优秀的开源框架。
