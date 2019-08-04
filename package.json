@@ -1,5 +1,5 @@
 {
-    "name": "tskoa",
+    "name": "@jmy/toa",
     "version": "1.0.0",
     "description": "server framework",
     "main": "./lib/index.js",
