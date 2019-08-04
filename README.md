@@ -13,7 +13,7 @@
 5. 异常处理
 6. 拦截器
 
-示例请参考 [tmkoa-demo](https://github.com/tjaume/tmkoa-demo/tree/master/src)
+示例请参考 [tmkoa-demo](https://github.com/tjaume/tmkoa-demo)
 
 安装：
 
