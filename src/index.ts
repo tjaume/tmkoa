@@ -37,7 +37,6 @@ export default class Toa extends Koa {
             this.proxy = true;
             // 注册错误处理回调
             this.on('error', (e, ctx: Koa.Context) => {
-                ctx.logger && ctx.logger.error(e);
                 console.log(e);
             });
             // 初始化 http exception 处理

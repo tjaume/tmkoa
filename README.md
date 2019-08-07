@@ -4,7 +4,7 @@
 
 ## 简介
 
-采用 TypeScript 编写的高效、可扩展的服务端框架。通过依赖注入的方式实现框架与业务的分离，让大家聚焦于业务逻辑的实现。框架主要包括以下 6 部分内容。
+最近在学习 `nestjs` 框架，其面向对象的思想，完美支持 TypeScript，以及基于依赖注入的方式实现业务与框架解耦，均是笔者比较青睐的服务端框架特性，但是 `nestjs` 底层是封装了 `express` http 框架，而笔者目前的技术栈使用 `koa`，两者之间对于中间件等一些功能还是有区别的。因此笔者采用 `koa` http 框架，模仿 `nestjs` 的特性（形似神不似），开发了 `mtkoa`，采用 TypeScript 进行开发，同时去除 `nestjs` 对于模块的概念，使其变的精简，又满足中小型服务端程序的需求，主要包括以下 6 部分内容。
 
 1. 路由
 2. 控制器
@@ -14,6 +14,8 @@
 6. 拦截器
 
 示例请参考 [tmkoa-demo](https://github.com/tjaume/tmkoa-demo)
+
+nestjs 文档参考：https://nestjs.com/
 
 安装：
 
@@ -103,7 +105,6 @@ main();
 
 ```ts
 import { BaseController, Controller, Get } from 'tmkoa';
-import HelloService from '../service/hello.service';
 import Koa from 'koa';
 
 @Controller('hello')
