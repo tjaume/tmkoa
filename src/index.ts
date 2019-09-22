@@ -1,6 +1,6 @@
 import Koa from 'koa';
 import { initRouter } from './core/router';
-import { initCommonService } from './core/service';
+import { initCommonService, initCustomService } from './core/service';
 import { initCommonMiddleware, initCustomeMiddleware } from './core/middleware';
 import { AppOption } from './core/interfaces/AppOption';
 import { initHttpExceptionHanlder } from './core/exception';
@@ -51,6 +51,8 @@ export default class Toa extends Koa {
             initCustomeMiddleware(this);
             // 挂载自定义 router
             initRouter(this);
+            // 初始化自定义服务
+            await initCustomService(this);
             // 初始化自定义异步事件
             if (ownInit) {
                 await ownInit();
