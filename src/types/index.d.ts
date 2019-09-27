@@ -1,4 +1,3 @@
-import './context';
 import Koa from 'koa';
 import { AppOption } from '../core/interfaces/AppOption';
 declare class Toa extends Koa {
