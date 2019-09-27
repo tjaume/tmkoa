@@ -1,6 +1,6 @@
 {
     "name": "tmkoa",
-    "version": "1.0.7",
+    "version": "1.0.8",
     "description": "server framework",
     "main": "./lib/index.js",
     "types": "./lib/types/index.d.ts",
